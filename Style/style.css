@@ -537,26 +537,42 @@ p, span{
 }
 
 
-@media (pointer: coarse) {
-    #onglets {
+@media screen and (max-width: 768px) {
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }#onglets {
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
-        padding: 10px 0;
+        padding: 10px 5px;
+    }#onglets a {
+        font-size: 14px;
     }#Nom {
         position: static;
         width: 100%;
         text-align: center;
-        margin: 0;
-    }#paragraphe1, #paragraphe2,#Python, #SQL, #C, #CH, #Compétences4, #HTML, #CSS, #JavaScript,#Github, #vscode, #VirtualBox, #vs,#Portfolio, #Jeux2D {
-        position: static !important;
-        margin: 15px auto !important;
-        width: 85% !important;
-        max-width: 250px;
+        margin: 0 0 15px 0;
+    }#paragraphe1, #paragraphe2 {
+        position: static;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin: 15px 0;
+        font-size: 15px;
+        line-height: 1.5;
+        text-align: left;
+    }#Python, #SQL, #C, #CH, #Compétences4, #HTML, #CSS, #JavaScript, #Github, #vscode, #VirtualBox, #vs, #Portfolio, #Jeux2D {
+        position: static;
+        margin: 15px auto;
+        width: 85%;
+        max-width: 320px;
     }#Compétences2, #Compétences5 {
-        width: 90%;
+        width: 92%;
         height: auto;
         padding-bottom: 20px;
+        margin: 0 auto;
     }#section4 {
         max-height: none;
     }#Contact input, #Contact textarea {
@@ -564,9 +580,9 @@ p, span{
     }#chargement {
         bottom: 30%;
         width: 70%;
-    }#imgPython, #imgSQL, #imgC, #imgCH, #imgHTML, #imgCSS, #imgJavaScript,#imgGithub, #imgvscode, #imgVirtualBox, #imgvs, #imgJeux2D {
-        position: static !important;
+    }#imgPython, #imgSQL, #imgC, #imgCH, #imgHTML, #imgCSS, #imgJavaScript, #imgGithub, #imgvscode, #imgVirtualBox, #imgvs, #imgJeux2D {
+        position: static;
         display: block;
-        margin: 15px auto 0 auto !important;
+        margin: 15px auto 0 auto;
     }
 }
