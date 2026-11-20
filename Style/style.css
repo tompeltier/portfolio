@@ -1,0 +1,537 @@
+body{
+    margin: 0px;
+    background-color: #0B1120;
+    color: #F1F5F9;
+}
+
+#intro {
+    position: fixed;
+    inset: 0;
+    background-color: #020617;
+    color: white;
+    z-index: 99999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: finIntro 0.5s ease 2.8s forwards;
+}#intro h1 {
+    font-size: 50px;
+
+    opacity: 0;
+    animation: apparition 1s ease forwards;
+}#chargement {
+    position: absolute;
+    bottom: 250px;
+
+    width: 250px;
+    height: 4px;
+
+    background-color: white;
+    overflow: hidden;
+}#progression {
+    width: 0%;
+    height: 100%;
+    background-color: #22D3EE;
+
+    animation: chargement 2.5s ease forwards;
+}@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}@keyframes chargement {
+    from {
+        width: 0%;
+    }to {
+        width: 100%;
+    }
+}@keyframes finIntro {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+a{
+    color:#22D3EE;
+}
+
+h1, h2, h3{
+    font-family: "Arcane Nine";
+}
+
+p, span{
+    font-family: "CreatoDisplay-Medium";
+}
+
+@font-face {
+    font-family: "Arcane Nine";
+    src: url("Arcane Nine.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "CreatoDisplay-Medium";
+    src: url("CreatoDisplay-Medium.otf") format("truetype");
+}
+
+.trait{
+    text-align: center;
+}
+
+#onglets {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #334155;
+
+    position: sticky;
+    top: 0;           
+    background: #020617;
+    z-index: 1000;
+}#Nom {
+    position: relative;
+    left: 25px;
+    margin-right: 42%;
+}
+
+#section1{
+    scroll-margin-top: 100px;
+}#section2{
+    scroll-margin-top: 50px;
+}
+#section3{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 25px 45px;
+    padding: 0 25px;
+    scroll-margin-top: 100px;
+}#section4{
+    max-height: 60vh;
+    scroll-margin-top: 20px;
+}@media (pointer: coarse){
+  #section4 { max-height: 400px; }
+}
+#section5{
+    scroll-margin-top: 100px;
+}#section5 h1, h3{
+    text-align: center;
+}
+
+#Accueil{
+    text-align: center;
+}#Accueil2{
+    margin: 40px auto;       
+    width: 90%;              
+    max-width: 650px;        
+    padding: 20px; 
+
+    border: 2px solid #334155;
+    background-color: #111827;
+    border-radius: 15px;
+    max-width: 650px;
+}#paragraphe1{
+    width: 300px;
+}#paragraphe2{
+    position: relative;
+    width: 300px;
+    left: 350px;
+    margin-top: -173px;
+}
+
+#Parcours {
+    text-align: center;
+}.timeline{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+}.timeline-item{
+    padding: 15px;
+    border-left: 3px solid #334155;
+    background-color: #111827;
+    border-radius: 15px;
+    position: relative;
+    margin-left: 30px;
+}.timeline-item::before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #22D3EE;
+    border-radius: 50%;
+
+    position: absolute;
+    left: -38px;
+    top : 20px
+}.timeline::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background-color: #111827;
+}
+
+#Compétences{
+    width: 100%;
+    text-align: center;
+}#Compétences2{
+    border: 2px solid #334155;
+    border-radius: 15px 15px 15px 15px;
+    background-color: #111827;
+    width: 625px;
+    height: 700px;
+}#Compétences3{
+    text-align: center;
+}#Python{
+    position: relative;
+    left: 25px;
+    border: 1px solid #334155;
+    border-radius: 5px 5px 5px 5px;
+    width: 150px;
+    height: 150px;
+}#Python2{
+    position: relative;
+    text-align: center;
+    top: 3px;
+}#imgPython{
+    position: relative;
+    left: 25px;
+    top: 15px;
+    height: 100px;
+    width: 100px;
+}#SQL{
+    position: relative;
+    left: 240px;
+    bottom: 152px;
+    border: 1px solid #334155;
+    border-radius: 5px 5px 5px 5px;
+    width: 150px;
+    height: 150px;
+}#SQL2{
+    position: relative;
+    text-align: center;
+    top: 3px;
+}#imgSQL{
+    position: relative;
+    left: 15px;
+    top: 17px;
+    height: 100px;
+    width: 125px;
+}#C{
+    position: relative;
+    left: 450px;
+    bottom: 303px;
+    border: 1px solid #334155;
+    border-radius: 5px 5px 5px 5px;
+    width: 150px;
+    height: 150px;
+}#C2{
+    position: relative;
+    text-align: center;
+    top: 3px;
+}#imgC{
+    position: relative;
+    left: 25px;
+    top: 17px;
+    height: 100px;
+    width: 100px;
+}#CH{
+    position: relative;
+    left: 25px;
+    bottom: 250px;
+    border: 1px solid #334155;
+    border-radius: 5px 5px 5px 5px;
+    width: 150px;
+    height: 150px;
+}#CH2{
+    position: relative;
+    text-align: center;
+    top: 3px;
+}#imgCH{
+    position: relative;
+    left: 25px;
+    top: 17px;
+    height: 100px;
+    width: 100px;
+}#Compétences4{
+    position: relative;
+    text-align: center;
+    bottom: 250px;
+}#HTML{
+    position: relative;
+    left: 25px;
+    bottom: 250px;
+    border: 1px solid #334155;
+    border-radius: 5px 5px 5px 5px;
+    width: 150px;
+    height: 150px;
+}#HTML2{
+    position: relative;
+    text-align: center;
+    top: 3px;
+}#imgHTML{
+    position: relative;
+    left: 25px;
+    top: 15px;
+    height: 100px;
+    width: 100px;
+}#CSS{
+    position: relative;
+    left: 240px;
+    bottom: 402px;
+    border: 1px solid #334155;
+    border-radius: 5px 5px 5px 5px;
+    width: 150px;
+    height: 150px;
+}#CSS2{
+    position: relative;
+    text-align: center;
+    top: 3px;
+}#imgCSS{
+    position: relative;
+    left: 40px;
+    top: 17px;
+    height: 100px;
+    width: 70px;
+}#JavaScript{
+    position: relative;
+    left: 450px;
+    bottom: 554px;
+    border: 1px solid #334155;
+    border-radius: 5px 5px 5px 5px;
+    width: 150px;
+    height: 150px;
+}#JavaScript2{
+    position: relative;
+    text-align: center;
+    top: 3px;
+}#imgJavaScript{
+    position: relative;
+    left: 25px;
+    top: 17px;
+    height: 100px;
+    width: 100px;
+}#Compétences5{
+    border: 2px solid #334155;
+    border-radius: 15px 15px 15px 15px;
+    background-color: #111827;
+    width: 535px;
+    height: 700px;
+}#Compétences6{
+    text-align: center;
+}#Github{
+    position: relative;
+    left: 50px;
+    border: 1px solid #334155;
+    border-radius: 5px 5px 5px 5px;
+    width: 150px;
+    height: 150px;
+}#Github2{
+    position: relative;
+    text-align: center;
+    top: 3px;
+}#imgGithub{
+    position: relative;
+    left: 25px;
+    top: 15px;
+    height: 100px;
+    width: 100px;
+}#vscode{
+    position: relative;
+    left: 330px;
+    bottom: 152px;
+    border: 1px solid #334155;
+    border-radius: 5px 5px 5px 5px;
+    width: 150px;
+    height: 150px;
+}#vscode2{
+    position: relative;
+    text-align: center;
+    bottom: 15px;
+}#imgvscode{
+    position: relative;
+    left: 15px;
+    top: 17px;
+    height: 100px;
+    width: 125px;
+}#VirtualBox{
+    position: relative;
+    left: 330px;
+    bottom: 100px;
+    border: 1px solid #334155;
+    border-radius: 5px 5px 5px 5px;
+    width: 150px;
+    height: 150px;
+}#VirtualBox2{
+    position: relative;
+    text-align: center;
+    top: 3px;
+}#imgVirtualBox{
+    position: relative;
+    left: 25px;
+    top: 17px;
+    height: 100px;
+    width: 100px;
+}#vs{
+    position: relative;
+    left: 50px;
+    bottom: 250px;
+    border: 1px solid #334155;
+    border-radius: 5px 5px 5px 5px;
+    width: 150px;
+    height: 150px;
+}#vs2{
+    position: relative;
+    text-align: center;
+    top: 3px;
+}#imgvs{
+    position: relative;
+    left: 25px;
+    top: 17px;
+    height: 100px;
+    width: 100px;
+}
+
+#Projets{
+    text-align: center;
+}#Portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    position: relative;
+    left: 25px;
+    border: 2px solid #334155;
+    background-color: #111827;
+    border-radius: 5px 5px 5px 5px;
+    width: 250px;
+    height: 250px;
+}#imgPortfolio{
+    padding: 5px;
+    height: 150px;
+    width: 150px;
+}#Jeux2D{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    position: relative;
+    left: 350px;
+    bottom: 254px;
+    border: 2px solid #334155;
+    background-color: #111827;
+    border-radius: 5px 5px 5px 5px;
+    width: 250px;
+    height: 250px;
+}#Jeux2D span{
+    position: relative;
+    background-color: #22D3EE;
+    border-radius: 5px;
+    padding: 8px 14px;
+    font-size: 14px;
+    width: fit-content;
+    top: -7px
+}#imgJeux2D{
+    position: relative;
+    left: 5px;
+    top: 10px;
+    height: 150px;
+    width: 250px;
+}.langages{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 10px;
+    gap: 10px;
+}.langages span{
+    background-color: #22D3EE;
+    border-radius: 5px;
+    padding: 8px 14px;
+    font-size: 14px;
+    width: fit-content;
+}
+
+/* Animation */
+#Portfolio, #Jeux2D, #Python, #CH, #C, #JavaScript, #HTML, #CSS, #VirtualBox, #vs, #vscode, #Github, #SQL, #timeline-item, #cv, #mail, .Contact-item {
+    transition: transform 0.2s ease;
+}#Portfolio:hover, #Jeux2D:hover, #Python:hover, #CH:hover, #C:hover, #JavaScript:hover, #HTML:hover, #CSS:hover, #SQL:hover, #VirtualBox:hover, #vs:hover, #vscode:hover, #Github:hover, .timeline-item:hover, #cv:hover, #mail:hover {
+    transform: translateY(-10px);
+    background-color: #273549
+}.Contact-item:hover{
+    background-color: #273549;
+}
+
+#mail{
+    border: 2px solid #334155;
+    border-radius: 8px;
+    background-color: #111827;
+    font-family: "CreatoDisplay-Medium";
+    width: 250px;
+    height: 25px;
+    text-align: center;
+
+    margin: 40px auto;
+}#mail2{
+    position: relative;
+    height: 17px;
+    width: 17px;
+    right: 5px;
+    top: 4px
+}#Contact{
+    margin: 40px auto;       
+    width: 90%;              
+    max-width: 650px;        
+    padding: 20px;     
+
+    border: 2px solid #334155;
+    border-radius: 15px;
+    background-color: #111827;
+    max-width: 650px;
+    text-align: center;
+}#Contact input{
+    width: 300px;
+    border-radius: 5px;
+}#Contact textarea{
+    width: 500px;
+    height: 100px;
+    border-radius: 5px;
+}#Contact2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 10px;
+}.Contact-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #334155;
+    background-color: #111827;
+    border-radius: 8px;
+}.Contact-img{
+    width: 50px;
+    height: 50px;
+}
+
+#credit{
+    text-align: center;
+    border-top: 1px solid #1E293B;
+    background-color: #020617;
+    color: #94A3B8;
+    padding: 15px 0;
+}
