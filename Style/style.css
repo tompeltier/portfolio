@@ -535,3 +535,38 @@ p, span{
     color: #94A3B8;
     padding: 15px 0;
 }
+
+
+@media (pointer: coarse) {
+    #onglets {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 0;
+    }#Nom {
+        position: static;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }#paragraphe1, #paragraphe2,#Python, #SQL, #C, #CH, #Compétences4, #HTML, #CSS, #JavaScript,#Github, #vscode, #VirtualBox, #vs,#Portfolio, #Jeux2D {
+        position: static !important;
+        margin: 15px auto !important;
+        width: 85% !important;
+        max-width: 250px;
+    }#Compétences2, #Compétences5 {
+        width: 90%;
+        height: auto;
+        padding-bottom: 20px;
+    }#section4 {
+        max-height: none;
+    }#Contact input, #Contact textarea {
+        width: 90%;
+    }#chargement {
+        bottom: 30%;
+        width: 70%;
+    }#imgPython, #imgSQL, #imgC, #imgCH, #imgHTML, #imgCSS, #imgJavaScript,#imgGithub, #imgvscode, #imgVirtualBox, #imgvs, #imgJeux2D {
+        position: static !important;
+        display: block;
+        margin: 15px auto 0 auto !important;
+    }
+}
