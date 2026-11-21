@@ -537,9 +537,14 @@ p, span{
 
 
 @media (hover: none) and (pointer: coarse) {
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
     html, body {
         width: 100%;
     }body{
+        width: 100%;
+        margin: 0;
         font-size: 18px;
     }#Accueil h1, #Parcours h1, #Projets h1, #section5 h1{
         font-size: 36px;
@@ -580,17 +585,17 @@ p, span{
         max-width: 320px;
     }#Compétences2, #Compétences5 {
         width: 92%;
+        max-width: 100%;
         height: auto;
         padding-bottom: 20px;
         margin: 0 auto;
     }#section4 {
         max-height: none;
-    }#Contact{
+    }#Contact,#Contact input,#Contact textarea {
+        max-width: 100%;
         box-sizing: border-box;
-    }#Contact input, #Contact textarea {
+    }#Contact textarea {
         width: 90%;
-        box-sizing: border-box;
-        font-size: 17px;
     }#chargement {
         bottom: 30%;
         width: 70%;
