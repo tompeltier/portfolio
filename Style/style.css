@@ -603,5 +603,11 @@ p, span{
         position: static;
         display: block;
         margin: 15px auto 0 auto;
+    }.trait {
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 10px;
     }
 }
