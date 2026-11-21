@@ -462,7 +462,6 @@ p, span{
     width: fit-content;
 }
 
-/* Animation */
 #Portfolio, #Jeux2D, #Python, #CH, #C, #JavaScript, #HTML, #CSS, #VirtualBox, #vs, #vscode, #Github, #SQL, #timeline-item, #cv, #mail, .Contact-item {
     transition: transform 0.2s ease;
 }#Portfolio:hover, #Jeux2D:hover, #Python:hover, #CH:hover, #C:hover, #JavaScript:hover, #HTML:hover, #CSS:hover, #SQL:hover, #VirtualBox:hover, #vs:hover, #vscode:hover, #Github:hover, .timeline-item:hover, #cv:hover, #mail:hover {
@@ -541,6 +540,10 @@ p, span{
     html, body {
         width: 100%;
         overflow-x: hidden;
+    }body{
+        font-size: 18px;
+    }#Accueil h1, #Parcours h1, #Projets h1, #section5 h1{
+        font-size: 36px;
     }#onglets {
         display: flex;
         flex-wrap: wrap;
@@ -548,21 +551,29 @@ p, span{
         gap: 10px;
         padding: 10px 5px;
     }#onglets a {
-        font-size: 14px;
+        font-size: 16px;
+    }#Accueil2{
+        width: 92%;
+        padding: 22px;
+        box-sizing: border-box;
     }#Nom {
         position: static;
         width: 100%;
         text-align: center;
         margin: 0 0 15px 0;
+        font-size: 24px;
     }#paragraphe1, #paragraphe2 {
         position: static;
         display: block;
         width: 100%;
         max-width: 100%;
         margin: 15px 0;
-        font-size: 15px;
-        line-height: 1.5;
+        font-size: 18px;
+        line-height: 1.6;
         text-align: left;
+    }.timeline-item{
+        font-size: 18px;
+        line-height: 1.5;
     }#Python, #SQL, #C, #CH, #Compétences4, #HTML, #CSS, #JavaScript, #Github, #vscode, #VirtualBox, #vs, #Portfolio, #Jeux2D {
         position: static;
         margin: 15px auto;
@@ -575,8 +586,12 @@ p, span{
         margin: 0 auto;
     }#section4 {
         max-height: none;
+    }#Contact{
+        box-sizing: border-box;
     }#Contact input, #Contact textarea {
         width: 90%;
+        box-sizing: border-box;
+        font-size: 17px;
     }#chargement {
         bottom: 30%;
         width: 70%;
