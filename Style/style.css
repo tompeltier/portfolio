@@ -536,7 +536,7 @@ p, span{
 }
 
 
-@media (hover: none) and (pointer: coarse) {
+@media (max-width: 768px) {
     *, *::before, *::after {
         box-sizing: border-box;
     }
