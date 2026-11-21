@@ -539,7 +539,6 @@ p, span{
 @media (hover: none) and (pointer: coarse) {
     html, body {
         width: 100%;
-        overflow-x: hidden;
     }body{
         font-size: 18px;
     }#Accueil h1, #Parcours h1, #Projets h1, #section5 h1{
